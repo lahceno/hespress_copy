@@ -1,0 +1,432 @@
+/* Hespress Website Styles */
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+    color: #1e22b4;
+    transition: color 0.3s ease;
+}
+
+h3, h5 {
+    transition: color 0.3s ease;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ============================================
+   Dark Mode Styles
+   ============================================ */
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode h2 {
+    color: #6b70ff;
+}
+
+body.dark-mode h3,
+body.dark-mode h5 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar-hespress {
+    background-color: #0d0f5a;
+}
+
+body.dark-mode .card-body-1 {
+    background-color: #2a2a2a;
+    color: #d0d0d0;
+}
+
+body.dark-mode .card-title-head {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .card-title-head:before {
+    border-top-color: #6b70ff;
+}
+
+body.dark-mode .card-title-head:after {
+    border-top-color: #3a3a5a;
+}
+
+body.dark-mode .card-title-head .the-line {
+    color: #6b70ff;
+}
+
+body.dark-mode .lic h3 {
+    color: #d0d0d0;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .card-body {
+    background-color: #2a2a2a;
+    color: #d0d0d0;
+}
+
+body.dark-mode .card-text {
+    color: #c0c0c0;
+}
+
+body.dark-mode .slider-icon {
+    fill: #ffffff;
+    filter: drop-shadow(0px 1px 3px rgba(255,255,255,0.3));
+}
+
+/* Dark mode toggle button */
+.dark-mode-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.theme-icon {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.moon-icon {
+    opacity: 0;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+body.dark-mode .sun-icon {
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+body.dark-mode .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* ============================================
+   Navbar Styles
+   ============================================ */
+
+.navbar-brand {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-hespress {
+    background-color: #1e22b4;
+    color: white;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.logo-svg {
+    width: 95px;
+    height: 40px;
+    fill: #ffffff;
+}
+
+/* ============================================
+   Card Styles
+   ============================================ */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-body-1 {
+    font-size: 0.9rem;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-title-head {
+    display: block;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin: 0px 0 0px 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background-color: #ffffff;
+    z-index: 13;
+    padding: 5px 0 10px 0;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.card-title-head:before {
+    content: "";
+    width: 50px;
+    border-top: 2px solid #1e22b4;
+    right: 0;
+    position: absolute;
+    z-index: 12;
+    bottom: 0;
+    left: auto;
+    transition: border-color 0.3s ease;
+}
+
+.card-title-head:after {
+    content: "";
+    width: 100%;
+    border-top: 2px solid #e7e6f7;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    transition: border-color 0.3s ease;
+}
+
+.card-title-head .the-line {
+    color: #1e22b4;
+    background: transparent;
+    font-size: 1.3rem;
+    padding: 0 0 0 0.9375rem;
+    z-index: 1;
+    position: relative;
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+/* ============================================
+   List Styles
+   ============================================ */
+
+.list-group {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.lic {
+    padding: 0;
+    margin: 12px 2px;
+}
+
+.col-md-3 ul li h3 {
+    font-size: 0.85rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================
+   Carousel/Slider Styles
+   ============================================ */
+
+.slider-icon {
+    width: 65px;        /* Change this one number to resize both arrows */
+    height: 65px;
+    fill: #ffffff;      /* SVG uses 'fill', not 'color' */
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.6)); /* Makes it visible on light images */
+    transition: fill 0.3s ease, filter 0.3s ease;
+}
+
+.icon-flipped {
+    transform: scaleX(-1); /* Flips it horizontally */
+}
+
+/* ============================================
+   Video Card Styles
+   ============================================ */
+
+.video-card {
+    margin-bottom: .9375rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-card .cover-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-card .card-img {
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+}
+
+.video-card .card-img .play-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    left: 10px;
+    right: auto;
+}
+
+.video-card img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.video-card .card-body-v {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    background-image: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.video-card .card-body-v .card-details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 0.9375rem 0.9375rem 0.9375rem 4rem;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.video-card .card-title {
+    font-size: 1.1rem;
+    overflow: hidden;
+    color: white;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    margin-top: 5px;
+}
+
+.card-body-v {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0;
+}
+
+.play-icon {
+    background: url(./sprite.svg#splay-video-icon-f) center no-repeat;
+    background-size: 2.8em 2.8em;
+    display: inline-block;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+
+/* ============================================
+   Ratio/Image Container Styles
+   ============================================ */
+
+div[class^=ratio-] {
+    width: 100%;
+    padding-top: 66%;
+    position: relative;
+    overflow: hidden;
+}
+
+div.ratio-med {
+    padding-top: 66%;
+}
+
+div[class^=ratio-] img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* ============================================
+   Layout Styles
+   ============================================ */
+
+.container-video {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+
+.col-xl-3, .col-sm-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+
+/* ============================================
+   Media Queries
+   ============================================ */
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hespress</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-hespress">
+        <div class="container">
+            <svg class="logo-svg" viewBox="0 0 245.7 66.9" xmlns="http://www.w3.org/2000/svg">
+                <path d="M93.9 11h-8v26h-9.3V11h-8v38.2c0 3.1-2 5-4.6 5-3.8 0-4.7-3.2-4.7-4.9V14.4h-8v22.5H42v-19h-8v23.9c0 6.8-4.8 11.8-11.3 11.8-6.6 0-11.3-5-11.3-11.8v-8.1h-8v8.6c0 10.6 8.7 19.3 19.3 19.3 9.7 0 17.8-7.3 19.1-16.7h9.5v4.2c0 4.2 3 12.9 12.5 13.1 7.1.1 12.8-5.8 12.8-12.8V45h9.8c4.4 0 7.4-2.8 7.4-7.4V11zM241 27.2 228.7 7.3c-1-1.7-2.5-2.8-4.4-2.8-2.1 0-3.4 1.1-4.4 2.9l-2.7 4.3 2 3L222 19l2.3-3.7 9.5 15.4c1.8 2.9.2 6.4-2.6 6.4 0 0-17.8-28.8-18.1-29.2-1-1.8-2.7-3.3-4.7-3.3s-3.4 1-4.4 2.7l-12.3 20c-1.3 2-2.7 5.6-1.4 9.8h-9.9V11h-8v38.5c.1 2.6-2 4.7-4.6 4.7-3.8 0-4.7-3.6-4.7-4.9V14.4h-8v22.5h-9.3v-19h-7.9V37h-9.3V11h-8v25.9h-9.3v-19h-7.9v31.7c0 5.2-1.9 8-6.4 8.3h-2.9v7.9H97c13-.6 14.3-11.3 14.4-15.6v-5.3h43.9v4.2c0 4.3 3.1 13.1 12.6 13.1 7 0 12.6-5.7 12.6-12.6V45h19c.1 11.5 8.1 17.4 17 17.4 7.1 0 15.3-4.5 16.7-14.6l.2-1.3h-7.8l-.4 1.3c-1.1 4.4-5.1 6.7-8.6 6.7-6.7 0-10.9-6.7-8.5-11.9 1.8-4 8.5-14.6 8.5-14.6l5.6 9h-9.3l-3.9 8h21c3.2 0 5.4-.1 8.9-2.5 4.6-4.2 5.2-10.5 2.1-15.3zm-39.7 9.7c-1.5-.1-2.9-1.3-3.2-3-.2-1 0-2.3.8-3.6l4.3-7 5.2-8.3 3.2 5.4-10.3 16.5z"/>
+                <path d="M86.9 48.1c-2.2 0-4.1 1.8-4.1 4.1 0 2.2 1.8 4.1 4.1 4.1 2.2 0 4.1-1.8 4.1-4.1-.1-2.3-1.9-4.1-4.1-4.1zm37.6 0c-2.2 0-4.1 1.8-4.1 4.1 0 2.2 1.8 4.1 4.1 4.1 2.2 0 4.1-1.8 4.1-4.1s-1.8-4.1-4.1-4.1zm-37.6 9.5c-2.2 0-4.1 1.8-4.1 4.1 0 2.2 1.8 4.1 4.1 4.1 2.2 0 4.1-1.8 4.1-4.1-.1-2.3-1.9-4.1-4.1-4.1z"/>
+            </svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">سياسة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">رياضة</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-sm dark-mode-btn" aria-label="Toggle dark mode">
+                            <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <line x1="12" y1="1" x2="12" y2="3"/>
+                                <line x1="12" y1="21" x2="12" y2="23"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                <line x1="1" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                            </svg>
+                            <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-title-head">
+                        <h2 class="the-line">24 ساعة</h2>
+                    </div>
+                    <ul class="list-group">
+                        <li class="lic"><h3>خبر 1: تفاصيل موجزة عن الخبر الأول.</h3></li>
+                        <li class="lic"><h3>خبر 2: تفاصيل موجزة عن الخبر الثاني.</h3></li>
+                        <li class="lic"><h3>خبر 3: تفاصيل موجزة عن الخبر الثالث.</h3></li>
+                        <li class="lic"><h3>خبر 4: تفاصيل موجزة عن الخبر الرابع.</h3></li>
+                        <li class="lic"><h3>خبر 5: تفاصيل موجزة عن الخبر الخامس.</h3></li>
+                        <li class="lic"><h3>خبر 6: تفاصيل موجزة عن الخبر السادس.</h3></li>
+                        <li class="lic"><h3>خبر 7: تفاصيل موجزة عن الخبر السابع.</h3></li>
+                        <li class="lic"><h3>خبر 8: تفاصيل موجزة عن الخبر الثامن.</h3></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div id="newsSlider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h3>عنوان الخبر الأول</h3>
+                                <img src="pics\image.png" class="d-block w-100" alt="News 1">
+                            </div>
+                            <div class="carousel-item">
+                                <h3>عنوان الخبر الثاني</h3>
+                                <img src="pics\image1.png" class="d-block w-100" alt="News 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#newsSlider" data-bs-slide="prev">
+                            <svg class="slider-icon icon-flipped" viewBox="0 0 43.2 47.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.4 25.6 17.5 17.5c.4.4.9.6 1.5.6s1.1-.2 1.5-.6l1.3-1.3c.8-.8.8-2.2 0-3L18.5 24 33.2 9.3c.4-.4.6-.9.6-1.5s-.2-1.1-.6-1.5L31.9 5c-.4-.4-.9-.6-1.5-.6s-1.1.2-1.5.6L11.4 22.5c-.4.4-.6.9-.6 1.5-.1.6.2 1.1.6 1.6z"/>
+                            </svg>
+                            <span class="visually-hidden">السابق</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#newsSlider" data-bs-slide="next">
+                            <svg class="slider-icon" viewBox="0 0 43.2 47.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.4 25.6 17.5 17.5c.4.4.9.6 1.5.6s1.1-.2 1.5-.6l1.3-1.3c.8-.8.8-2.2 0-3L18.5 24 33.2 9.3c.4-.4.6-.9.6-1.5s-.2-1.1-.6-1.5L31.9 5c-.4-.4-.9-.6-1.5-.6s-1.1.2-1.5.6L11.4 22.5c-.4.4-.6.9-.6 1.5-.1.6.2 1.1.6 1.6z"/>
+                            </svg>
+                            <span class="visually-hidden">التالي</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-3" style="border: none;">
+                        <div class="card-title-head">
+                            <h2 class="the-line">مصدر مطلع</h2>
+                        </div>
+                        <div class="card-body-1">
+                            <p class="card-text">
+                                علمت هسبريس من مصادر جيدة الاطلاع أن كشوفات مالية أوروبية واردة حركت مصالح المراقبة لدى مكتب الصرف، بعدما تضمنت معلومات دقيقة همت قوائم جديدة لحسابات بنكية وممتلكات بالخارج غير مصرح بها في إطار عمليات "التسوية التلقائية" السابقة، بعضها يعود إلى موظفين عموميين كبار ومنتخبين سابقين وحاليين، تورط بعضهم في تهريب مبالغ ضخمة غير مصرح بها، مستغلين جنسيات مزدوجة وأسماء أجنبية للتضليل. وأفادت المصادر ذاتها بأن أبحاث عناصر "دركي الصرف" تركز على رصد لجوء مخالفين إلى إضافة أسماء أجنبية في هوياتهم لتضليل المراقبين الماليين في أوروبا والمملكة، بعدما تم ضبط موظف عمومي كبير استعمل هذه الحيلة في إحداث شركة متخصصة في...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="border: none;">
+                        <div class="card-title-head">
+                            <h2 class="the-line">زاوية حادة</h2>
+                        </div>
+                        <div class="card-body-1">
+                            <p class="card-text">
+                                يصف مفهوم "اضطراب العداء المزمن" أعراض اضطراب الشخصية المعادية للمجتمع (Antisocial Personality Disorder - ASPD)، ويعتبر حالة مرضية نفسية، أهم ما يُميز المُصاب بها هو: "استصغار الآخر، الخداع والكذب، التلاعب، الاندفاع، العدوانية، عدم الندم، وانعدام المسؤولية". تتمثل أهم العوامل المسببة له في: العوامل الوراثية، التنشئة السلطوية، التعرض لصدمات نفسية، القلق المزمن، واختلال تنظيم الانفعالات. أما بالنسبة لعلاج هذه الحالات، فيعتمد على العلاج السلوكي المعرفي، دون إغفال أهمية بعض الأدوية التي تُساعد في تهدئة القلق المزمن وبالتالي السيطرة على الانفعالات العدوانية. حسب تصور علم النفس الاجتماعي، تُعد الاضطرابات النفسية وما تتيحه من فهم للإنسان وانفعالاته، مرجعاً لفهم وتفسير اضطرابات الجماعات. لقد...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="v-and-p">
+                <div class="col-md-12">
+                    <div class="card-title-head">
+                        <h2 class="the-line">صوت وصورة</h2>
+                    </div>
+                    <div class="container-video"> 
+                        <div class="col-12 col-sm-6 col-md-6 col-xl-3"> 
+                            <div class="video-card">
+                                <div class="cover-card">
+                                    <div class="card-img">
+                                        <div class="ratio-med">
+                                            <img width="800" height="480" src="pics/far-2.jpg" alt="Video Thumbnail">
+                                        </div>
+                                        <span class="play-icon"></span>
+                                    </div>
+                                    <div class="card-body-v">
+                                        <div class="card-details">
+                                            <h3 class="card-title">الجيش يتدخل بالقصر الكبير</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-xl-3"> 
+                            <div class="video-card">
+                                <div class="cover-card">
+                                    <div class="card-img">
+                                        <div class="ratio-med">
+                                            <img width="800" height="480" src="pics/mghribi-f-paris.jpg" alt="Video Thumbnail">
+                                        </div>
+                                        <span class="play-icon"></span>
+                                    </div>
+                                    <div class="card-body-v">
+                                        <div class="card-details">
+                                            <h3 class="card-title">مغربي في باريس</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-xl-3"> 
+                            <div class="video-card">
+                                <div class="cover-card">
+                                    <div class="card-img">
+                                        <div class="ratio-med">
+                                            <img width="800" height="480" src="pics/ali-benmakhlouf-Academie-du-Royaume-du-Maroc.jpeg" alt="Video Thumbnail">
+                                        </div>
+                                        <span class="play-icon"></span>
+                                    </div>
+                                    <div class="card-body-v">
+                                        <div class="card-details">
+                                            <h3 class="card-title">الذكاء الاصطناعي بالتعليم والعلاج</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-12 col-sm-6 col-md-6 col-xl-3"> 
+                            <div class="video-card">
+                                <div class="cover-card">
+                                    <div class="card-img">
+                                        <div class="ratio-med">
+                                            <img width="800" height="480" src="pics/flood.jpg" alt="Video Thumbnail">
+                                        </div>
+                                        <span class="play-icon"></span>
+                                    </div>
+                                    <div class="card-body-v">
+                                        <div class="card-details">
+                                            <h3 class="card-title">سيول غير مسبوقة بالقصر الكبير</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-title-head">
+                            <h2 class="the-line">رياضة</h2>
+                        </div>
+                        <img src="pics/image-sports.png" class="card-img-top" alt="Sports Image">
+                        <div class="card-body">
+                            <h5 class="card-title">عنوان الخبر الرياضي</h5>
+                            <p class="card-text">هذا هو نص الخبر الرياضي. هنا يتم عرض تفاصيل الخبر بشكل موجز وجذاب للقارئ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-title-head">
+                            <h2 class="the-line">سياسة</h2>
+                        </div>
+                        <img src="pics/image-politics.png" class="card-img-top" alt="Politics Image">
+                        <div class="card-body">
+                            <h5 class="card-title">عنوان الخبر السياسي</h5>
+                            <p class="card-text">هذا هو نص الخبر السياسي. هنا يتم عرض تفاصيل الخبر بشكل موجز وجذاب للقارئ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-title-head">
+                            <h2 class="the-line">طقس</h2>
+                        </div>
+                        <img src="pics/image-weather.png" class="card-img-top" alt="Weather Image">
+                        <div class="card-body">
+                            <h5 class="card-title">عنوان الخبر الجوي</h5>
+                            <p class="card-text">هذا هو نص الخبر الجوي. هنا يتم عرض تفاصيل الخبر بشكل موجز وجذاب للقارئ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="navbar-hespress">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة © 2026 هسبريس</p>
+            <small class="text-secondary">نسخة تجريبية</small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Dark Mode Toggle Script
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // Check for saved dark mode preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+        }
+        
+        // Toggle dark mode
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            // Save preference
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
+</body>
+</html>
